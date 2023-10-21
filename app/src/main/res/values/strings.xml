@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Semana09Firebase</string>
+    <string name="valbtnlogin">INGRESAR</string>
+    <string name="valbtnregister">REGISTRARSE</string>
+    <string name="valtxtfullname">Full name</string>
+    <string name="valtxtcountry">Country</string>
+    <string name="valtxtemailregister">Email</string>
+    <string name="valtxtpasswordregister">Password</string>
+    <string name="valbtnsaveregister">SAVE</string>
 </resources>
