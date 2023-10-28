@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Semana09Firebase"
         tools:targetApi="31">
         <activity
+            android:name=".PrincipalActivity"
+            android:exported="false"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.Semana09Firebase.NoActionBar" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
