@@ -11,8 +11,8 @@ class CustomerRepository(application: Application) {
             CustomerDao? = CustomerDatabase
                 .getInstance(application)?.customerDao()
     fun insert(customerEntity: CustomerEntity){
-        if(customerEntity!=null)
-            customerDao?.let { InsertAsyncTask(it).execute(customerEntity) }
+            if(customerDao!=null)
+            InsertAsyncTask(customerDao).execute(customerEntity)
     }
     fun getCustomers(): LiveData<List<CustomerEntity>>{
         return customerDao?.getCustomerOrderByLastName() ?: MutableLiveData<List<CustomerEntity>>().apply{
