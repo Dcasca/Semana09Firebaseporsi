@@ -37,7 +37,8 @@ class ListadoFragment : Fragment() {
                 lstCourses = snap!!.documents.map { document ->
                     CourseModel(
                         document["description"].toString(),
-                        document["score"].toString(), document["imageUrl"].toString()
+                        document["score"].toString(),
+                        document["imageUrl"].toString()
                     )
                 }
 
