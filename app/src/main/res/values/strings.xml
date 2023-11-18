@@ -30,4 +30,5 @@
     <string name="valetfirstname">First name </string>
     <string name="valetlastname">Last name</string>
     <string name="valetphonenumber">Phone Number</string>
+    <string name="valbtnsearchpokemon">SEARCH</string>
 </resources>
