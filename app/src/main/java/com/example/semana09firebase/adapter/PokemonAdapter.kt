@@ -35,6 +35,10 @@ class PokemonAdapter(private var pokemonList: List<PokemonModel>)
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val pokemonItem = pokemonList[position]
         holder.bind(pokemonItem)
+
+        holder.itemView.setOnClickListener {
+            onItemClickListener?.onItemClick(pokemonItem)
+        }
     }
     fun setData(pokemonList: List<PokemonModel>){
         this.pokemonList = pokemonList
